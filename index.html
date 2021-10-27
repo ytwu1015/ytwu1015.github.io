@@ -17,14 +17,14 @@
     </body>
     <script>
         mySpec = {
-            {
+
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "data": {"url": "data/building_inventory.csv"},
             "mark": "bar",
             "encoding": {
             "x": {"field": "Year Acquired", "type": "quantitative"}
             }
-            }
+       
         };
         vegaEmbed('#myviz', mySpec);
     </script>
