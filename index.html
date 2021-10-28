@@ -8,7 +8,7 @@
     <body>
         <h1>Welcome to my page!</h1>
         <p>
-            This is a scatter plot representing the relationship between the year acquired and the year constructed.
+            This is a scatter plot representing the relationship between the year acquired and the year constructed of each building.
         </p>
         <div id="myviz">
         </div>
@@ -19,7 +19,7 @@
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "data": {"url": "data/building_inventory.csv"},
             "width": 900,
-            "height": 500,
+            "height": 300,
             "transform": [{
                    "filter": {"field": "Year Acquired", "range": [1700, 2050]}
               }],
