@@ -18,7 +18,10 @@
 
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
             "data": {"url": "data/building_inventory.csv"},
-            "mark": {"point", "clip": true},
+            "transform": [{
+                   "filter": {"field": "Year Acquired", "range": [1500, 2200]}
+              }],
+            "mark": "point",
             "encoding": {
             "x": {"field": "Year Acquired", "type": "quantitative", "scale": {"domain": [1500,2200]} },
             "y": {"field": "Year Constructed", "type": "quantitative", "scale": {"domain": [1500,2200]}}
